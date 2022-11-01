@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgWhite"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v_mid"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/v_mid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user">
+
+        <View
+            android:id="@+id/logo_box"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:background="@drawable/logo_box"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/logo_lowercase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="105dp"
+            android:background="@color/bgWhite"
+            android:fontFamily="serif"
+            android:includeFontPadding="false"
+            android:text="@string/ordle"
+            android:textColor="@color/fgBlack"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/logo_box"
+            app:layout_constraintStart_toStartOf="@+id/logo_box"
+            app:layout_constraintTop_toTopOf="@+id/logo_box"
+            app:layout_constraintVertical_bias="0.65" />
+
+        <TextView
+            android:id="@+id/logo_unlimited"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/bgWhite"
+            android:fontFamily="@font/letters"
+            android:includeFontPadding="false"
+            android:text="@string/unlimited"
+            android:textColor="@color/fgBlue"
+            android:textSize="20sp"
+            android:rotation="-5"
+            android:textStyle="italic"
+            android:layout_marginTop="-8dp"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintEnd_toEndOf="@+id/logo_lowercase"
+            app:layout_constraintStart_toEndOf="@+id/logo_box"
+            app:layout_constraintTop_toBottomOf="@+id/logo_lowercase" />
+
+
+        <TextView
+            android:id="@+id/logo_w"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="@string/w"
+            android:textColor="@color/fgBlack"
+            android:textSize="80sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/logo_box"
+            app:layout_constraintEnd_toEndOf="@id/logo_box"
+            app:layout_constraintStart_toStartOf="@+id/logo_box"
+            app:layout_constraintTop_toTopOf="@+id/logo_box" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="40dp"
+        android:gravity="center"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginVertical="12dp"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"
+            android:layout_marginEnd="4dp"
+            app:icon="@drawable/ic_user"
+            app:iconGravity="textEnd"
+            app:iconSize="32dp"
+            app:iconTint="?android:attr/textColor"
+            />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:fontFamily="@font/letters"
+            android:includeFontPadding="false"
+            android:text="@string/no_internet"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/new_game"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginHorizontal="40dp"
+        android:fontFamily="@font/letters"
+        android:text="@string/new_game"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/stats"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/v_mid"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/stats"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/letters"
+        android:text="@string/stats"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/howto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_game" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/howto"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/letters"
+        android:text="@string/how_to"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stats" />
+
+
+    <ProgressBar
+        android:id="@+id/loading_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/v_mid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/v_mid" />
+
+
+    <LinearLayout
+        android:id="@+id/no_internet_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/bgWhite"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/v_mid">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="@string/no_internet"
+            android:textColor="@color/fgBlack"
+            android:textSize="24sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/retry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:text="@string/reload"
+            app:backgroundTint="@color/fgBlue"
+            app:icon="@drawable/ic_reload" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

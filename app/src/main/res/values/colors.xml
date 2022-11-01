@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bgWhite">#fafafa</color>
+    <color name="bgGray1">#e4e4e4</color>
+    <color name="bgGray2">#b4b4b4</color>
+    <color name="fgGray1">#888</color>
+    <color name="fgBlackAlt">#111111</color>
+    <color name="fgBlack">#757575</color>
+    <color name="fgBlue">#1291e0</color>
+    <color name="bgBlue">#ceebfe</color>
+    <color name="fgRed">#ff5833</color>
+    <color name="fgGreen">#67a760</color>
+    <color name="fgYellow">#c8b359</color>
+
+</resources>

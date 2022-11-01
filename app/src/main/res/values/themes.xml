@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style
+        name="Theme.Wordle"
+        parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/fgBlue</item>
+        <item name="colorPrimaryVariant">@color/fgRed</item>
+        <item name="colorOnPrimary">@color/bgWhite</item>
+        <item name="colorOnSurface">@color/fgBlack</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/fgBlue</item>
+        <item name="colorSecondaryVariant">@color/fgRed</item>
+        <item name="colorOnSecondary">@color/fgBlack</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorOnPrimary</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">?attr/colorOnSecondary</item>
+        <!-- Customize your theme here. -->
+        <item name="android:textColor">@color/fgBlack</item>
+        <item name="android:windowBackground">@color/bgWhite</item>
+    </style>
+
+</resources>

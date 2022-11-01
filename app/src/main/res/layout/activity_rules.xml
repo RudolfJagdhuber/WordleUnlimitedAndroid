@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgWhite"
+    tools:context=".Rules">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@color/bgWhite"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:liftOnScroll="true">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/back"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                app:iconTint="?android:attr/textColor"
+                android:insetLeft="0dp"
+                android:insetTop="0dp"
+                android:insetRight="0dp"
+                android:insetBottom="0dp"
+                app:icon="@drawable/ic_back"
+                app:iconGravity="textStart"
+                app:iconSize="32dp"
+                />
+
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:fontFamily="@font/letters"
+                android:text="@string/how_to"
+                android:textColor="@color/fgBlack"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/appbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="24dp"
+            >
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/v_start"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.125"/>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/v_end"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.875"/>
+
+            <TextView
+                android:id="@+id/rules1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rules1"
+                android:textSize="16sp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/rules2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rules2"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/rules1" />
+
+            <TextView
+                android:id="@+id/rules3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rules3"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="24dp"
+                app:layout_constraintTop_toBottomOf="@id/rules2" />
+
+            <TextView
+                android:id="@+id/rules4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rules4"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@id/rules3" />
+
+            <include
+                android:id="@+id/example"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                layout="@layout/row5"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="@id/v_end"
+                app:layout_constraintStart_toStartOf="@id/v_start"
+                app:layout_constraintTop_toBottomOf="@id/rules4" />
+
+            <TextView
+                android:id="@+id/rules5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rules5"
+                android:textSize="16sp"
+                android:layout_marginTop="32dp"
+                app:layout_constraintTop_toBottomOf="@id/example" />
+
+            <TextView
+                android:id="@+id/letter1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/box_green"
+                android:fontFamily="@font/letters"
+                android:gravity="center"
+                tools:ignore="hardcodedText"
+                android:text="A"
+                android:textColor="@color/bgWhite"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rules5" />
+
+            <TextView
+                android:id="@+id/rules6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/rules6"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/letter1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/letter1"
+                app:layout_constraintTop_toTopOf="@+id/letter1" />
+
+            <TextView
+                android:id="@+id/letter2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/box_yellow"
+                android:fontFamily="@font/letters"
+                android:gravity="center"
+                tools:ignore="hardcodedText"
+                android:text="E"
+                android:textColor="@color/bgWhite"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/letter1" />
+
+            <TextView
+                android:id="@+id/rules7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/rules7"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/letter2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/letter2"
+                app:layout_constraintTop_toTopOf="@+id/letter2" />
+
+            <TextView
+                android:id="@+id/letter3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/box_gray"
+                android:fontFamily="@font/letters"
+                android:gravity="center"
+                tools:ignore="hardcodedText"
+                android:text="R"
+                android:textColor="@color/bgWhite"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/letter2" />
+
+            <TextView
+                android:id="@+id/rules8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/rules8"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/letter3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/letter3"
+                app:layout_constraintTop_toTopOf="@+id/letter3" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginHorizontal="16dp"
+                android:background="@color/fgGray1"
+                app:layout_constraintTop_toBottomOf="@id/letter3"/>
+
+            <TextView
+                android:id="@+id/rules9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/letters"
+                android:layout_marginHorizontal="16dp"
+                android:gravity="center"
+                android:text="@string/rules9"
+                android:textSize="11sp"
+                app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

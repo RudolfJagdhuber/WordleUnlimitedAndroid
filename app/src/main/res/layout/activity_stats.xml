@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="hardcodedText"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Stats">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="?android:attr/windowBackground"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:liftOnScroll="true">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/back"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                app:iconTint="?android:attr/textColor"
+                android:insetLeft="0dp"
+                android:insetTop="0dp"
+                android:insetRight="0dp"
+                android:insetBottom="0dp"
+                app:icon="@drawable/ic_back"
+                app:iconGravity="textStart"
+                app:iconSize="32dp"
+                />
+
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:letterSpacing="-0.075"
+                android:layout_marginHorizontal="24dp"
+                android:fontFamily="@font/letters"
+                android:text="@string/stats_of"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/stats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="8dp"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="4dp"
+        android:background="@drawable/key_white"
+        android:fontFamily="@font/letters"
+        android:text="@string/n_solved"
+        android:textColor="@color/fgBlack"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appbar" />
+
+    <TextView
+        android:id="@+id/header_stats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/letters"
+        android:text="@string/header_stats"
+        android:textColor="@color/fgBlack"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/t1"
+        app:layout_constraintTop_toBottomOf="@+id/stats" />
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/letters"
+        android:background="@drawable/key_white"
+        android:textColor="@color/fgBlack"
+        android:gravity="center"
+        android:text="1"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_stats" />
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/letters"
+        android:background="@drawable/key_white"
+        android:textColor="@color/fgBlack"
+        android:gravity="center"
+        android:text="2"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t1" />
+
+    <TextView
+        android:id="@+id/t3"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/letters"
+        android:background="@drawable/key_white"
+        android:textColor="@color/fgBlack"
+        android:gravity="center"
+        android:text="3"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t2" />
+
+    <TextView
+        android:id="@+id/t4"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/letters"
+        android:background="@drawable/key_white"
+        android:textColor="@color/fgBlack"
+        android:gravity="center"
+        android:text="4"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t3" />
+
+    <TextView
+        android:id="@+id/t5"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/letters"
+        android:background="@drawable/key_white"
+        android:textColor="@color/fgBlack"
+        android:gravity="center"
+        android:text="5"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t4" />
+
+    <TextView
+        android:id="@+id/t6"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/letters"
+        android:background="@drawable/key_white"
+        android:textColor="@color/fgBlack"
+        android:gravity="center"
+        android:text="6"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t5" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/p1"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:progress="1"
+        app:indicatorColor="@color/fgBlue"
+        app:trackColor="@color/bgGray1"
+        android:layout_marginEnd="8dp"
+        app:trackThickness="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/t1"
+        app:layout_constraintEnd_toStartOf="@+id/barrier"
+        app:layout_constraintStart_toEndOf="@+id/t1"
+        app:layout_constraintTop_toTopOf="@+id/t1" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/p2"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:progress="1"
+        app:indicatorColor="@color/fgBlue"
+        app:trackColor="@color/bgGray1"
+        android:layout_marginEnd="8dp"
+        app:trackThickness="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/t2"
+        app:layout_constraintEnd_toStartOf="@+id/barrier"
+        app:layout_constraintStart_toEndOf="@+id/t2"
+        app:layout_constraintTop_toTopOf="@+id/t2" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/p3"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:progress="1"
+        app:indicatorColor="@color/fgBlue"
+        app:trackColor="@color/bgGray1"
+        android:layout_marginEnd="8dp"
+        app:trackThickness="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/t3"
+        app:layout_constraintEnd_toStartOf="@+id/barrier"
+        app:layout_constraintStart_toEndOf="@+id/t3"
+        app:layout_constraintTop_toTopOf="@+id/t3" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/p4"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:progress="1"
+        app:indicatorColor="@color/fgBlue"
+        app:trackColor="@color/bgGray1"
+        android:layout_marginEnd="8dp"
+        app:trackThickness="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/t4"
+        app:layout_constraintEnd_toStartOf="@+id/barrier"
+        app:layout_constraintStart_toEndOf="@+id/t4"
+        app:layout_constraintTop_toTopOf="@+id/t4" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/p5"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:progress="1"
+        app:indicatorColor="@color/fgBlue"
+        app:trackColor="@color/bgGray1"
+        android:layout_marginEnd="8dp"
+        app:trackThickness="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/t5"
+        app:layout_constraintEnd_toStartOf="@+id/barrier"
+        app:layout_constraintStart_toEndOf="@+id/t5"
+        app:layout_constraintTop_toTopOf="@+id/t5" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/p6"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:progress="1"
+        app:indicatorColor="@color/fgBlue"
+        app:trackColor="@color/bgGray1"
+        android:layout_marginEnd="8dp"
+        app:trackThickness="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/t6"
+        app:layout_constraintEnd_toStartOf="@+id/barrier"
+        app:layout_constraintStart_toEndOf="@+id/t6"
+        app:layout_constraintTop_toTopOf="@+id/t6" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="start"
+        app:constraint_referenced_ids="val1,val2,val3,val4,val5,val6" />
+
+
+    <TextView
+        android:id="@+id/val1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/letters"
+        android:text="45"
+        android:textColor="@color/fgGray1"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@id/barrier"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintBottom_toBottomOf="@+id/t1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/t1" />
+
+    <TextView
+        android:id="@+id/val2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/letters"
+        android:text="0"
+        android:textColor="@color/fgGray1"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@id/barrier"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintBottom_toBottomOf="@+id/t2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/t2" />
+
+    <TextView
+        android:id="@+id/val3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/letters"
+        android:text="123"
+        android:textColor="@color/fgGray1"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@id/barrier"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintBottom_toBottomOf="@+id/t3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/t3" />
+
+    <TextView
+        android:id="@+id/val4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/letters"
+        android:text="0"
+        android:textColor="@color/fgGray1"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@id/barrier"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintBottom_toBottomOf="@+id/t4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/t4" />
+
+    <TextView
+        android:id="@+id/val5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/letters"
+        android:text="0"
+        android:textColor="@color/fgGray1"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@id/barrier"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintBottom_toBottomOf="@+id/t5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/t5" />
+
+    <TextView
+        android:id="@+id/val6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/letters"
+        android:text="0"
+        android:textColor="@color/fgGray1"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@id/barrier"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintBottom_toBottomOf="@+id/t6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/t6" />
+
+    <TextView
+        android:id="@+id/header_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/letters"
+        android:text="@string/header_word_list"
+        android:textColor="@color/fgBlack"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/t1"
+        app:layout_constraintTop_toBottomOf="@+id/t6" />
+
+    <View
+        android:id="@+id/h_line"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bgGray1"
+        app:layout_constraintTop_toBottomOf="@id/header_list"
+        android:layout_marginTop="8dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@+id/h_line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="0dp"
+        tools:itemCount="20"
+        tools:listitem="@layout/stats_element" />
+
+
+    <FrameLayout
+        android:id="@+id/loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/bgWhite"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/appbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/no_internet_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/bgWhite"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appbar">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+            android:gravity="center"
+            android:text="@string/no_internet"
+            android:textColor="@color/fgBlack"
+            android:textSize="24sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/retry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:text="@string/reload"
+            app:backgroundTint="@color/fgBlue"
+            app:icon="@drawable/ic_reload" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
