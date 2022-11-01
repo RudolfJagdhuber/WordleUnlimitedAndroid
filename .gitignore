@@ -10,3 +10,5 @@
 local.properties
 /playstore
 /app/src/main/res/values/secrets.xml
+app-release.aab
+private_key.pepk
