@@ -10,7 +10,7 @@ connects to are fully shared on GitHub.
 For further details on the gameplay, please visit the official site 
 on Google Play.
 
-
+![image](https://user-images.githubusercontent.com/42039093/199245525-86e803c4-7d32-464c-9593-4c08cef45c4a.png)
 
 ## API Connection
 The android app itself basically provides a frontend, while all game logic is
