@@ -1,4 +1,4 @@
-package de.datavisions.wordle
+package de.datavisions.wortel
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

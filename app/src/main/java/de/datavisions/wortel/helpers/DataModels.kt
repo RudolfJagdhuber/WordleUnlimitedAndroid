@@ -1,4 +1,4 @@
-package de.datavisions.wordle.helpers
+package de.datavisions.wortel.helpers
 
 import org.json.JSONObject
 import java.io.Serializable

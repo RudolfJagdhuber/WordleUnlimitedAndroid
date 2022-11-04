@@ -1,4 +1,4 @@
-package de.datavisions.wordle
+package de.datavisions.wortel
 
 import android.content.Context
 import android.content.Intent
@@ -12,12 +12,12 @@ import androidx.appcompat.app.AppCompatActivity
 import com.android.volley.VolleyError
 import com.google.android.material.button.MaterialButton
 import com.google.gson.Gson
-import de.datavisions.wordle.api.JsonObjectResponse
-import de.datavisions.wordle.api.newGame
-import de.datavisions.wordle.api.registerGeneric
-import de.datavisions.wordle.helpers.DataModels
-import de.datavisions.wordle.helpers.DataModels.UserCredentials
-import de.datavisions.wordle.helpers.formatGuessList
+import de.datavisions.wortel.api.JsonObjectResponse
+import de.datavisions.wortel.api.newGame
+import de.datavisions.wortel.api.registerGeneric
+import de.datavisions.wortel.helpers.DataModels
+import de.datavisions.wortel.helpers.DataModels.UserCredentials
+import de.datavisions.wortel.helpers.formatGuessList
 import org.json.JSONObject
 
 class MainActivity : AppCompatActivity() {

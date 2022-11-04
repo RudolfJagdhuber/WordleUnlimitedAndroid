@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.Wordle" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.Wortel" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/fgBlue</item>
         <item name="colorPrimaryVariant">@color/fgRed</item>

@@ -1,4 +1,4 @@
-package de.datavisions.wordle
+package de.datavisions.wortel
 
 import android.app.Activity
 import android.app.Dialog
@@ -19,11 +19,11 @@ import androidx.recyclerview.widget.RecyclerView
 import com.android.volley.VolleyError
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.progressindicator.LinearProgressIndicator
-import de.datavisions.wordle.api.JsonArrayResponse
-import de.datavisions.wordle.api.gameList
-import de.datavisions.wordle.helpers.DataModels
-import de.datavisions.wordle.helpers.extractStats
-import de.datavisions.wordle.helpers.formatGuessList
+import de.datavisions.wortel.api.JsonArrayResponse
+import de.datavisions.wortel.api.gameList
+import de.datavisions.wortel.helpers.DataModels
+import de.datavisions.wortel.helpers.extractStats
+import de.datavisions.wortel.helpers.formatGuessList
 import org.json.JSONArray
 import kotlin.math.round
 

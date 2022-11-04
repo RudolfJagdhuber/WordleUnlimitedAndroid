@@ -1,27 +1,21 @@
-package de.datavisions.wordle
+package de.datavisions.wortel
 
 import android.content.Context
-import android.content.DialogInterface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.Editable
-import android.text.TextWatcher
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
-import androidx.core.content.ContextCompat
 import androidx.core.widget.doAfterTextChanged
 import com.android.volley.VolleyError
 import com.google.android.material.button.MaterialButton
-import com.google.android.material.textfield.MaterialAutoCompleteTextView
 import com.google.android.material.textfield.TextInputEditText
 import com.google.gson.Gson
-import de.datavisions.wordle.api.*
-import de.datavisions.wordle.helpers.DataModels
+import de.datavisions.wortel.api.*
+import de.datavisions.wortel.helpers.DataModels
 import org.json.JSONObject
-import kotlin.system.exitProcess
 
 class Profile : AppCompatActivity() {
 

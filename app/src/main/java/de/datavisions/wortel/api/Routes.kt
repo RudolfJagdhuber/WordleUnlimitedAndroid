@@ -1,17 +1,17 @@
-package de.datavisions.wordle.api
+package de.datavisions.wortel.api
 
 import android.content.Context
 import com.android.volley.Request
 import com.android.volley.VolleyError
 import com.android.volley.toolbox.JsonArrayRequest
 import com.android.volley.toolbox.JsonObjectRequest
-import de.datavisions.wordle.R
+import de.datavisions.wortel.R
 import org.json.JSONArray
 import org.json.JSONObject
 import java.security.MessageDigest
 
 
-const val API_URL = "http://82.165.111.42/wordle/api/"
+const val API_URL = "http://82.165.111.42/wortel/api/"
 
 interface JsonObjectResponse {
     fun onSuccess(res: JSONObject, ctx: Context)

@@ -1,4 +1,4 @@
-package de.datavisions.wordle.api
+package de.datavisions.wortel.api
 
 import android.content.Context
 import com.android.volley.Request

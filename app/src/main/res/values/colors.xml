@@ -8,8 +8,8 @@
     <color name="fgBlack">#757575</color>
     <color name="fgBlue">#1291e0</color>
     <color name="bgBlue">#ceebfe</color>
-    <color name="fgRed">#ff5833</color>
-    <color name="fgGreen">#67a760</color>
-    <color name="fgYellow">#c8b359</color>
+    <color name="fgRed">#ff5335</color>
+    <color name="fgGreen">#62a663</color>
+    <color name="fgYellow">#c6b259</color>
 
 </resources>
