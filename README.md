@@ -20,7 +20,7 @@ handled via a Python FastAPI:
 
 ## Further Info
 Wortel Unlimited is inspired by the popular word guessing games `Lingo` and
-`Wordle` by Josh Wardle (https://www.powerlanguage.co.uk/)
+`Wordle`
 
 For Feedback, Comments or Wishes please contact me at
 r.jagdhuber@gmx.de or open an issue in this Repo.
