@@ -16,7 +16,7 @@ on Google Play.
 The android app itself basically provides a frontend, while all game logic is
 handled via a Python FastAPI:
 * API GitHub Page: https://github.com/RudolfJagdhuber/WortelAPI
-* Official API Link: http://82.165.111.42/wortel/api/
+* Official API Link: https://data-visions.de/wortel/api/
 
 ## Further Info
 Wortel Unlimited is inspired by the popular word guessing games `Lingo` and

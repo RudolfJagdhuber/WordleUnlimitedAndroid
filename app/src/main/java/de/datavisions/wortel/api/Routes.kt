@@ -11,7 +11,7 @@ import org.json.JSONObject
 import java.security.MessageDigest
 
 
-const val API_URL = "http://82.165.111.42/wortel/api/"
+const val API_URL = "https://data-visions.de/wortel/api/"
 
 interface JsonObjectResponse {
     fun onSuccess(res: JSONObject, ctx: Context)
