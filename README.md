@@ -1,4 +1,4 @@
-# Wortel Unlimited for Android <img src="https://user-images.githubusercontent.com/42039093/200065456-0ee2c416-a195-4d7d-a821-744f8b7257bb.png" align="right" height = 120/>
+# Wortel Unlimited for Android <img src="https://user-images.githubusercontent.com/42039093/200296952-1ee46a64-379c-49f6-8279-5d6c566ac5c4.png" align="right" height = 120/>
 
 Repository of the (german) Android App `Wortel Unlimited (deutsch)`.
 https://play.google.com/store/apps/details?id=de.datavisions.wortel
